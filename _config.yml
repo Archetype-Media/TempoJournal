@@ -1,6 +1,7 @@
 ---
 title: Tempo Journal
 timezone: Australia/Melbourne
+livereload: true
 collections:
   posts:
     title: Posts
