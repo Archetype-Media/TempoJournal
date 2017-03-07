@@ -1,0 +1,14 @@
+body {
+  color: $white;
+  background-color: $black;
+}
+
+.logo {
+  background: transparent url(/assets/images/tempo-logo.svg) no-repeat center center;
+  background-size: contain;
+  width: 30vw;
+  height: 30vw;
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+}

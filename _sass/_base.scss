@@ -1,0 +1,25 @@
+// Colours
+
+$black: black;
+$white: white;
+
+// Fonts
+$sans: Helvetica, Arial, sans-serif;
+
+// Box model
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+// Font sizing
+html {
+  font-size: 100%;
+}
+
+body {
+  font-size: 62.5%
+}
