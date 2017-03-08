@@ -5,18 +5,15 @@
 
   <body>
 
-    <div class="slideshow"></div>
-    <div class="logo">
-      
+    <div class="slideshow">
+      <div class="slide slide__1"></div>
+      <div class="slide slide__2"></div>
     </div>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery/3.1.1/jquery.min.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
-    <script>
 
-      $(function() {
-        $('.single-item').slick();
-      });
-    </script>
+    <div class="logo"></div>
+
+    {% include scripts.html %}
+
   </body>
 
 </html>
