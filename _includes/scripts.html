@@ -1,0 +1,24 @@
+<script src="//cdn.jsdelivr.net/jquery/3.1.1/jquery.min.js"></script>
+<script>
+  $(function() {
+    var active_class = "slide__active",
+        $slides = $('.slide');
+
+    var $current_slide = $slides.first();
+
+    $current_slide.addClass(active_class);
+
+    setInterval(function(){
+      $next_slide = ($current_slide.next().length > 0) ? $current_slide.next() : $slides.first();
+      $next_slide.show();
+      $current_slide.fadeOut(1000, function() {
+        $current_slide.removeClass(active_class);
+        $next_slide.addClass(active_class);
+        $current_slide = $next_slide;
+      }).show();
+      //alert($current_slide.length);
+    },4000);
+
+
+  });
+</script>
