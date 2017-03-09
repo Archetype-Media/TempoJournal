@@ -4,8 +4,7 @@
     var active_class = "slide__active",
         $slides = $('.slide');
 
-    var $current_slide = $slides.last();
-    var $next_slide = ($current_slide.next().length > 0) ? $current_slide.next() : $slides.first();
+    var $current_slide = $slides.first();
 
     $current_slide.addClass(active_class);
 
@@ -18,7 +17,7 @@
         $current_slide = $next_slide;
       }).show();
       //alert($current_slide.length);
-    },5000);
+    },4000);
 
 
   });
