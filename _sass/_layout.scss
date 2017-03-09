@@ -1,3 +1,7 @@
+html {
+  font-size: 1vw;
+}
+
 body {
   color: $white;
   background: $black no-repeat center center;
@@ -7,16 +11,71 @@ body {
   padding: 0;
 }
 
+@media (orientation: portrait) {
+  html {
+    font-size: 1vh;
+  }
+}
+
 .logo {
   background: transparent url(/assets/images/tempo-logo.svg) no-repeat center center;
   background-size: contain;
-  width: 25vw;
-  height: 25vw;
+  width: 25rem;
+  height: 25rem;
   margin: auto;
   position: absolute;
   top: 0; left: 0; bottom: 0; right: 0;
-  text-indent: -999em;
+  text-indent: -999rem;
+  z-index: 888;
+
+  @media (orientation: portrait) {
+    width: 30rem;
+    height: 30rem;
+  }
+}
+
+
+.links {
+
+  position: absolute;
   z-index: 999;
+  width: 100%;
+  height: 2rem;
+  margin: auto auto 0;
+  top: 0; left: 0; bottom: 3rem; right: 0;
+  text-align: center;
+
+  @media (orientation: portrait) {
+    & {
+      bottom: 5rem;
+    }
+  }
+
+  .link {
+    display: inline-block;
+    text-indent: -999rem;
+    width: 2rem;
+    height: 2rem;
+    margin: 0;
+    padding: 0;
+    background-size: contain;
+    margin: 0 0.5rem;
+
+    @media (orientation: portrait) {
+      & {
+        width: 5rem;
+        height: 5rem;
+      }
+    }
+  }
+
+  .link__contact {
+    background: transparent url(/assets/images/icon-email.svg) no-repeat center center;
+  }
+
+  .link__instagram {
+    background: transparent url(/assets/images/icon-instagram.svg) no-repeat center center;
+  }
 }
 
 
