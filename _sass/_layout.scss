@@ -1,5 +1,11 @@
 html {
   font-size: 1vw;
+
+  @media (orientation: portrait) {
+    & {
+      font-size: 1vh;
+    }
+  }
 }
 
 body {
@@ -11,14 +17,8 @@ body {
   padding: 0;
 }
 
-@media (orientation: portrait) {
-  html {
-    font-size: 1vh;
-  }
-}
-
 .logo {
-  background: transparent url(/assets/images/tempo-logo.svg) no-repeat center center;
+  background: transparent url(/assets/images/tempo-logo-r2.svg) no-repeat center center;
   background-size: contain;
   width: 25rem;
   height: 25rem;
